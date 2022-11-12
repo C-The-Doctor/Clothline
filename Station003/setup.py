@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='ekylenath',
+    name='LeanClothline',
     version='1.0.0',
     port='0.0.0.0',
     packages=find_packages(),

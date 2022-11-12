@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> GOOGOO SHOP</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static' , filename="Base/assets/img/favicon.png")}}" rel="icon">
+  <link href="{{url_for('static' , filename="Base/assets/img/apple-touch-icon.png")}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static' , filename="Base/assets/vendor/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/bootstrap-icons/bootstrap-icons.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/boxicons/css/boxicons.min.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/quill/quill.snow.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/quill/quill.bubble.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/remixicon/remixicon.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/simple-datatables/style.css")}}" rel="stylesheet">
+
+  <!-- Catalogues Main CSS File -->
+  <link href="{{url_for('static' , filename="Base/assets/css/style.css")}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Catalogues Name: GOOGOO SHOP - v2.4.0
+  * Catalogues URL: https://THE-DOCTOR-FOUNDATION.com/-Catalogues/
+  * Author: THE-DOCTOR-FOUNDATION.com
+  * License: https://THE-DOCTOR-FOUNDATION.com/license/
+  ======================================================== -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+</style>
+</head>
+<body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+   
+             
+<div class="container-fluid">
+
+<div class="container">
+  <!-- Title -->
+  <div class="d-flex justify-content-between align-items-lg-center py-3 flex-column flex-lg-row">
+    <h2 class="h5 mb-3 mb-lg-0"><a href="../../pages/admin/customers.html" class="text-muted"><i class="bi bi-arrow-left-square me-2"></i></a> Create new customer</h2>
+    <div class="hstack gap-3">
+      <button class="btn btn-light btn-sm btn-icon-text"><i class="bi bi-x"></i> <span class="text">Cancel</span></button>
+      <button class="btn btn-primary btn-sm btn-icon-text"><i class="bi bi-save"></i> <span class="text">Save</span></button>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="row">
+    <!-- Left side -->
+    <div class="col-lg-8">
+      <!-- Basic information -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="h6 mb-4">Basic information</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">First name</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">Last name</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">Phone number</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="h6 mb-4">Address</h3>
+          <div class="mb-3">
+            <label class="form-label">Address Line 1</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Address Line 2</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">Country</label>
+                <select class="select2 form-control select2-hidden-accessible" data-select2-placeholder="Select country" data-select2-id="select2-data-1-gy14" tabindex="-1" aria-hidden="true">
+                  <option data-select2-id="select2-data-3-ibs9"></option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="DK">Denmark</option>
+                  <option value="TL">East Timor</option>
+                  <option value="GM">Gambia</option>
+                </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="select2-data-2-46y9" style="width: 391px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-vp8l-container" aria-controls="select2-vp8l-container"><span class="select2-selection__rendered" id="select2-vp8l-container" role="textbox" aria-readonly="true" title="Select country"><span class="select2-selection__placeholder">Select country</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">State</label>
+                <select class="select2 form-control select2-hidden-accessible" data-select2-placeholder="Select state" data-select2-id="select2-data-4-680y" tabindex="-1" aria-hidden="true">
+                  <option data-select2-id="select2-data-6-cshs"></option>
+                  <option value="AL">Alabama</option>
+                  <option value="CA">California</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="KS">Kansas</option>
+                </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="select2-data-5-np4c" style="width: 391px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-2fn7-container" aria-controls="select2-2fn7-container"><span class="select2-selection__rendered" id="select2-2fn7-container" role="textbox" aria-readonly="true" title="Select state"><span class="select2-selection__placeholder">Select state</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">City</label>
+                <select class="select2 form-control select2-hidden-accessible" data-select2-placeholder="Select city" data-select2-id="select2-data-7-809c" tabindex="-1" aria-hidden="true">
+                  <option data-select2-id="select2-data-9-k35n"></option>
+                  <option value="b">Bangkok</option>
+                  <option value="d">Dubai</option>
+                  <option value="h">Hong Kong</option>
+                  <option value="k">Kuala Lumpur</option>
+                  <option value="l">London</option>
+                  <option value="n">New York City</option>
+                  <option value="m">Macau</option>
+                  <option value="p">Paris</option>
+                </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="select2-data-8-3peu" style="width: 391px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-jdfi-container" aria-controls="select2-jdfi-container"><span class="select2-selection__rendered" id="select2-jdfi-container" role="textbox" aria-readonly="true" title="Select city"><span class="select2-selection__placeholder">Select city</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-3">
+                <label class="form-label">ZIP code</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right side -->
+    <div class="col-lg-4">
+      <!-- Status -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="h6">Status</h3>
+          <select class="form-select">
+            <option value="draft" selected="">Draft</option>
+            <option value="active">Active</option>
+            <option value="active">Inactive</option>
+          </select>
+        </div>
+      </div>
+      <!-- Avatar -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="h6">Avatar</h3>
+          <input class="form-control" type="file">
+        </div>
+      </div>
+      <!-- Notes -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="h6">Notes</h3>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+      </div>
+      <!-- Notification settings -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="h6">Notification Settings</h3>
+          <ul class="list-group list-group-flush mx-n2">
+            <li class="list-group-item px-0 d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <h6 class="mb-0">News and updates</h6>
+                <small>News about product and feature updates.</small>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch">
+              </div>
+            </li>
+            <li class="list-group-item px-0 d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <h6 class="mb-0">Tips and tutorials</h6>
+                <small>Tips on getting more out of the platform.</small>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" checked="">
+              </div>
+            </li>
+            <li class="list-group-item px-0 d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <h6 class="mb-0">User Research</h6>
+                <small>Get involved in our beta testing program.</small>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+<style type="text/css">
+body{
+    background:#eee;
+}
+
+.card {
+    box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: 1rem;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.5rem 1.5rem;
+}
+</style>
+
+      
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+ <script src="{{url_for('static' , filename="Base/assets/vendor/apexcharts/apexcharts.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/chart.js/chart.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/echarts/echarts.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/quill/quill.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/simple-datatables/simple-datatables.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/tinymce/tinymce.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/php-email-form/validate.js")}}"></script>
+
+  <!-- Catalogues Main JS File -->
+  <script src="{{url_for('static' , filename="Base/assets/js/main.js")}}"></script>
+
+</body>
+</html>

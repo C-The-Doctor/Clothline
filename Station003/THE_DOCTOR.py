@@ -42,7 +42,11 @@ def Generate_Sequence():
 
 @app.route("/")
 def home():
-    return render_template("DoctorLayout.html")
+    GalleryObject=os.listdir(os.path.join(app.static_folder, "Conceptuals/"))
+    ObjectTrack = len(GalleryObject)
+    UserID = ""
+    return render_template('DoctorLayout.html', ObjectTrack=ObjectTrack , GalleryObject=GalleryObject , UserID = UserID )
+
 
 
 

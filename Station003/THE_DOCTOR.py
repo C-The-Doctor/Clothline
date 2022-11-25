@@ -38,8 +38,11 @@ def not_found(e):
 
 def Generate_Sequence():
     return uuid.uuid4()  
+ 
 
-
+@app.route("/")
+def home():
+    return render_template("DoctorLayout.html")
 
 
 

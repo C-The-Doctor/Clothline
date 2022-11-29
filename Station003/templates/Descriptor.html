@@ -275,6 +275,289 @@
   </header><!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
+ 
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> ChackoRaps</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{url_for('static' , filename="Base/assets/img/favicon.png")}}" rel="icon">
+  <link href="{{url_for('static' , filename="Base/assets/img/apple-touch-icon.png")}}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{url_for('static' , filename="Base/assets/vendor/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/bootstrap-icons/bootstrap-icons.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/boxicons/css/boxicons.min.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/quill/quill.snow.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/quill/quill.bubble.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/remixicon/remixicon.css")}}" rel="stylesheet">
+  <link href="{{url_for('static' , filename="Base/assets/vendor/simple-datatables/style.css")}}" rel="stylesheet">
+
+  <!-- Catalogues Main CSS File -->
+  <link href="{{url_for('static' , filename="Base/assets/css/style.css")}}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Catalogues Name: ChackoRaps - v2.4.0
+  * Catalogues URL: https://THE-DOCTOR-FOUNDATION.com/-Catalogues/
+  * Author: THE-DOCTOR-FOUNDATION.com
+  * License: https://THE-DOCTOR-FOUNDATION.com/license/
+  ======================================================== -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+body{
+  background-color: white;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{{url_for('static' , filename="Base/assets/img/logo.png")}}" alt="">
+        <span class="d-none d-lg-block">ChackoRaps</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header">
+              You have 3 new messages
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{{url_for('static' , filename="Base/assets/img/messages-1.jpg")}}" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{{url_for('static' , filename="Base/assets/img/messages-2.jpg")}}" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="{{url_for('static' , filename="Base/assets/img/messages-3.jpg")}}" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="dropdown-footer">
+              <a href="#">Show all messages</a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="{{url_for('static' , filename="Base/assets/img/profile-img.gif")}}" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2"> {{ UserID }} </span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6> {{ UserID }}  </h6>
+              <span>Web Designer</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Need Help?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
@@ -282,133 +565,92 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="index.html">
           <i class="bi bi-grid"></i>
-          <span> All Catalogues </span>
+          <span> All Categories </span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span> Electronics </span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-menu-button-wide"></i><span> Accessories  </span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="components-alerts.html">
-              <i class="bi bi-circle"></i><span> TV's & Accessories </span>
+              <i class="bi bi-circle"></i><span> Jewelry </span>
+            </a>
+          </li>
+           <li>
+            <a href="components-alerts.html">
+              <i class="bi bi-circle"></i><span> Head Wear  </span>
             </a>
           </li>
           <li>
             <a href="components-accordion.html">
-              <i class="bi bi-circle"></i><span> Radios </span>
+              <i class="bi bi-circle"></i><span> Eye Wear </span>
             </a>
           </li>
           <li>
             <a href="components-badges.html">
-              <i class="bi bi-circle"></i><span> Speakers & Home Audio </span>
+              <i class="bi bi-circle"></i><span> Body Wear </span>
             </a>
           </li>
-          <li>
-            <a href="components-breadcrumbs.html">
-              <i class="bi bi-circle"></i><span> Phones & Accessories </span>
-            </a>
-          </li>
-          <li>
-            <a href="components-buttons.html">
-              <i class="bi bi-circle"></i><span> Computers & Accessories </span>
-            </a>
-          </li>
-          <li>
-            <a href="components-cards.html">
-              <i class="bi bi-circle"></i><span> Cables , Chargers & Accessories  </span>
-            </a>
-          </li>
-          <li>
-            <a href="components-carousel.html">
-              <i class="bi bi-circle"></i><span> Cameras  & Accessories </span>
-            </a>
-          </li>
-          <li>
-            <a href="components-list-group.html">
-              <i class="bi bi-circle"></i><span> Gaming & Accessories </span>
-            </a>
-          </li>
-          <li>
-            <a href="components-modal.html">
-              <i class="bi bi-circle"></i><span> Kids Entertainment </span>
-            </a>
-          </li>
+    
           <li>
             <a href="components-tabs.html">
-              <i class="bi bi-circle"></i><span> Virtual Reality </span>
+              <i class="bi bi-circle"></i><span> Foot Wear </span>
             </a>
           </li>
+
           <li>
             <a href="components-tabs.html">
-              <i class="bi bi-circle"></i><span> Other Appliances </span>
+              <i class="bi bi-circle"></i><span> Others </span>
             </a>
           </li>
+
         </ul>
       </li><!-- End Components Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Garments</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-journal-text"></i><span> Men </span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="forms-elements.html">
-              <i class="bi bi-circle"></i><span> Jackets </span>
-            </a>
-          </li>
+         
           <li>
             <a href="forms-layouts.html">
-              <i class="bi bi-circle"></i><span> Trousers </span>
+              <i class="bi bi-circle"></i><span> All </span>
             </a>
           </li>
           <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Shorts  </span>
-            </a>
-          </li>
-          <li>
-             <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Skirts & Dresses  </span>
+              <i class="bi bi-circle"></i><span> Tops  </span>
             </a>
           </li>
           <li>
              <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Shoes & Boots   </span>
+              <i class="bi bi-circle"></i><span> Trousers  </span>
             </a>
           </li>
           <li>
-            <a href="forms-validation.html">
-              <i class="bi bi-circle"></i><span> Sweaters & WaisteCoats </span>
+             <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Coats & Jackets   </span>
             </a>
           </li>
            <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Suits , Tie's , Coats   </span>
-            </a>
-          </li>
-           <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Hats , Marvins & Scarfs  </span>
+              <i class="bi bi-circle"></i><span> Shorts   </span>
             </a>
           </li>
             <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Protective Wear    </span>
+              <i class="bi bi-circle"></i><span> Foot Wear   </span>
             </a>
           </li>
            <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Baby Wear   </span>
-            </a>
-          </li>
-            <li>
-            <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> General Clothing   </span>
+              <i class="bi bi-circle"></i><span> Other categories    </span>
             </a>
           </li>
           <li>
@@ -419,42 +661,44 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Jewelery</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-layout-text-window-reverse"></i><span> Women   </span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="tables-general.html">
-              <i class="bi bi-circle"></i><span> Rings  </span>
-            </a>
-          </li>
+        
           <li>
             <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span> Necklaces </span>
+              <i class="bi bi-circle"></i><span> All </span>
             </a>
           </li>
+         
            <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span> Bracelets </span>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Trousers  </span>
             </a>
           </li>
            <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Antiques &  Airlooms  </span>
+              <i class="bi bi-circle"></i><span> Skirts & Dresses   </span>
             </a>
           </li>
            <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Anklets  </span>
+              <i class="bi bi-circle"></i><span> Coats & Jackets   </span>
             </a>
           </li>
            <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Coronets   </span>
+              <i class="bi bi-circle"></i><span> Shorts  </span>
             </a>
           </li>
-           <li>
+            <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Others  </span>
+              <i class="bi bi-circle"></i><span> Foot Wear   </span>
+            </a>
+          </li>
+            <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Other Categories  </span>
             </a>
           </li>
           <li>
@@ -466,302 +710,125 @@
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#funiture-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span> Furniture  </span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-bar-chart"></i><span> Kids   </span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="funiture-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span> Chairs & Sofas </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Beds & Cribs  </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span>Entertainment Decks</span>
+           <li>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Tops  </span>
             </a>
           </li>
            <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Tables & Stands  </span>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Trousers  </span>
             </a>
           </li>
            <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Storage Containers </span>
-            </a>
-          </li>
-          
-          
-
-        </ul>
-      </li><!-- End Charts Nav -->
-
-
-<li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#homeapp-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span> Home Appliances </span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="homeapp-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> General  Appliances </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span> In - Door Appliances </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Out - Door Appliances  </span>
-            </a>
-          </li>
-          
-
-           <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Kitchen Appliances </span>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Skirts & Dresses   </span>
             </a>
           </li>
            <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Living Room Appliances </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Wash Room Appliances </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Bed Room Appliances </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Other Appliances </span>
-            </a>
-          </li>
-
-         
-        </ul>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#sne-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span> Sports & Equipment  </span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="sne-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span> Tracksuits  </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Swimsuits </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Wetsuits </span>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Coats & Jackets   </span>
             </a>
           </li>
            <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Roller Skates & Boards  </span>
-            </a>
-          </li>
-           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Leotards  </span>
-            </a>
-          </li>
-           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Sporting Footwear </span>
-            </a>
-          </li>
-           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Protective Wear </span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
-
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#cosmetics-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span> Cosmetics   </span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="cosmetics-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-           <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Hair Cosmetics </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span> Facial Cosmetics </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Body Cosmetics </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Colognes </span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
-
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#house-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span> House Decor(s)  </span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="house-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span> Wood Decors </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Glass Decor</span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Wall Decor </span>
+            <a href="forms-editors.html">
+              <i class="bi bi-circle"></i><span> Shorts  </span>
             </a>
           </li>
             <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> General Decor   </span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Charts Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#energy-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span> Power & Energy   </span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="energy-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span> Solar Panels & Accessories </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-apexcharts.html">
-              <i class="bi bi-circle"></i><span> Electrical Accessories </span>
-            </a>
-          </li>
-          <li>
-            <a href="charts-echarts.html">
-              <i class="bi bi-circle"></i><span> Generators / Power Backups </span>
-            </a>
-          </li>
-            <li>
-            <a href="fdsds.html">
-              <i class="bi bi-circle"></i><span> Batteries     </span>
+              <i class="bi bi-circle"></i><span> Foot Wear   </span>
             </a>
           </li>
             <li>
             <a href="forms-editors.html">
-              <i class="bi bi-circle"></i><span> Power Tools   </span>
+              <i class="bi bi-circle"></i><span> Other Categories  </span>
             </a>
           </li>
+          
+          
+
         </ul>
       </li><!-- End Charts Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#curtlery-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-gem"></i><span> Curtlery </span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="curtlery-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="icons-bootstrap.html">
-              <i class="bi bi-circle"></i><span> Serving </span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-remix.html">
-              <i class="bi bi-circle"></i><span> Cooking </span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span> Storing </span>
-            </a>
-          </li>
-          <li>
-            <a href="icons-boxicons.html">
-              <i class="bi bi-circle"></i><span> General </span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Icons Nav -->
 
-      <li class="nav-heading">Pages</li>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person"></i>
-          <span> Cart </span>
-        </a>
-      </li><!-- End Profile Page Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-faq.html">
-          <i class="bi bi-question-circle"></i>
-          <span> Billing </span>
-        </a>
-      </li><!-- End F.A.Q Page Nav -->
 
    
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
+        <a class="nav-link collapsed" data-bs-target="#cosmetics-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-bar-chart"></i><span> Limited Editions  </span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="cosmetics-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+           <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span> For Men  </span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-chartjs.html">
+              <i class="bi bi-circle"></i><span> For Women  </span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-apexcharts.html">
+              <i class="bi bi-circle"></i><span> For Kids  </span>
+            </a>
+          </li>
+          <li>
+            <a href="charts-echarts.html">
+              <i class="bi bi-circle"></i><span> Foot Wear  </span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Charts Nav -->
+
+
+       
+      
+
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('Cart')}}">
+          <i class="bi bi-person"></i>
+          <span> cart </span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('Billing')}}">
+          <i class="bi bi-question-circle"></i>
+          <span> Billing </span>
+        </a>
+      </li><!-- End F.A.Q Page Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{url_for('Dispatch')}}">
           <i class="bi bi-card-list"></i>
           <span> Timeline </span>
         </a>
       </li><!-- End Register Page Nav -->
-
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-login.html">
+        <a class="nav-link collapsed" href="{{url_for('Accounts')}}">
           <i class="bi bi-box-arrow-in-right"></i>
           <span> Account </span>
         </a>
       </li><!-- End Login Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
-          <span> Terms And Conditions </span>
-        </a>
-      </li><!-- End Error 404 Page Nav -->
+    
    <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link collapsed" href="{{url_for('Contact')}}">
           <i class="bi bi-envelope"></i>
           <span>Contact Us </span>
         </a>
       </li><!-- End Contact Page Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="pages-blank.html">
+        <a class="nav-link " href="{{url_for('Auth')}}">
           <i class="bi bi-file-earmark"></i>
           <span> Sign Out </span>
         </a>
@@ -769,7 +836,71 @@
 
     </ul>
 
+
   </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Blank Page</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Pages</li>
+          <li class="breadcrumb-item active">Blank</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+       <div class="w3-row w3-grayscale">
+    
+{% for GalleryObect  in  GalleryObject %}
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+                <img src="{{url_for('static' , filename='Conceptuals/' + GalleryObect )}}" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped sample<br><b>$19.99</b></p>
+      </div>
+  </div>
+{% endfor %}
+</div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+    
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{url_for('static' , filename="Base/assets/vendor/apexcharts/apexcharts.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/bootstrap/js/bootstrap.bundle.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/chart.js/chart.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/echarts/echarts.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/quill/quill.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/simple-datatables/simple-datatables.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/tinymce/tinymce.min.js")}}"></script>
+  <script src="{{url_for('static' , filename="Base/assets/vendor/php-email-form/validate.js")}}"></script>
+
+  <!-- Catalogues Main JS File -->
+  <script src="{{url_for('static' , filename="Base/assets/js/main.js")}}"></script>
+
+</body>
+
+</html>
+   
+       
+
+        
 
   <main id="main" class="main">
     
@@ -787,7 +918,7 @@
      
     </div><!-- End Page Title -->
 
-    <section class="section">
+   
     
 
 <div class="container">
@@ -805,7 +936,7 @@
                       <p class="text-muted font-size-sm">Bay Area San </p>
                        <p class="text-muted font-size-sm">Francisco , CA</p>
    <p class="text-muted font-size-sm">Francisco , CA</p>
-                      <button class="btn btn-primary"> Add To Cart </button>
+                      <button class="btn btn-primary"> Add To cart </button>
                       <button class="btn btn-outline-primary"> Buy </button>
 
                     </div>
@@ -971,13 +1102,13 @@
 
         </div>
     </div>
-  </section>
+ 
 
 
 
 
 
-    <section class="section" style="background-color:white">
+   
 
         <div class="pagetitle">
       <h1> Similar Products </h1>
@@ -1000,8 +1131,7 @@
   </div>
 {% endfor %}
 </div>
-    </section>
-
+ 
 
 
 

@@ -28,7 +28,7 @@
 
   <!-- Catalogues Main CSS File -->
   <link href="{{url_for('static' , filename="Base/assets/css/style.css")}}" rel="stylesheet">
-
+ 
   <!-- =======================================================
   * Catalogues Name: ChackoRaps - v2.4.0
   * Catalogues URL: https://THE-DOCTOR-FOUNDATION.com/-Catalogues/
@@ -54,7 +54,7 @@ body{
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="{{url_for('Fashion')}}" class="logo d-flex align-items-center">
         <img src="{{url_for('static' , filename="Base/assets/img/logo.png")}}" alt="">
         <span class="d-none d-lg-block">ChackoRaps</span>
       </a>
@@ -285,7 +285,7 @@ body{
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="{{url_for('Fashion')}}">
           <i class="bi bi-grid"></i>
           <span> All Categories </span>
         </a>
@@ -550,7 +550,7 @@ body{
         </a>
       </li><!-- End Contact Page Nav -->
       <li class="nav-item">
-        <a class="nav-link " href="{{url_for('Cart')}}">
+        <a class="nav-link " href="{{url_for('Auth')}}">
           <i class="bi bi-file-earmark"></i>
           <span> Sign Out </span>
         </a>
@@ -564,17 +564,18 @@ body{
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Blank Page</h1>
+      <h1> Dashboard </h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Pages</li>
-          <li class="breadcrumb-item active">Blank</li>
+          <li class="breadcrumb-item"><a href="{{url_for('Fashion')}}">Home</a></li>
+          <li class="breadcrumb-item"> All Categories </li>
+          <li class="breadcrumb-item active"> Dashboard </li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section">
+        
+          <section class="section">
        <div class="w3-row w3-grayscale">
     
 {% for GalleryObect  in  GalleryObject %}
